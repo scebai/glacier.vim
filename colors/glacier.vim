@@ -6,7 +6,7 @@
 "  cool-headed perspective for your coding
 "
 "
-" File:       iceberg.vim
+" File:       iceorca.vim
 " Maintainer: cocopon <cocopon@me.com>
 " Modified:   2017-11-30 20:32+0900
 " License:    MIT
@@ -23,7 +23,7 @@ if exists('syntax_on')
   syntax reset
 endif
 
-let g:colors_name = 'iceberg'
+let g:colors_name = 'iceorca'
 
 
 hi! ColorColumn cterm=NONE ctermbg=235 guibg=#1e2132
@@ -34,9 +34,9 @@ hi! Constant ctermfg=140 guifg=#a093c7
 hi! Cursor ctermbg=252 ctermfg=234 guibg=#c6c8d1 guifg=#161821
 hi! CursorLineNr ctermbg=237 ctermfg=253 guibg=#2a3158 guifg=#cdd1e6
 hi! Delimiter ctermfg=252 guifg=#c6c8d1
-hi! DiffAdd ctermbg=29 ctermfg=158 guibg=#45493e guifg=#c0c5b9
-hi! DiffChange ctermbg=23 ctermfg=159 guibg=#384851 guifg=#b3c3cc
-hi! DiffDelete ctermbg=95 ctermfg=224 guibg=#53343b guifg=#ceb0b6
+hi! DiffAdd ctermbg=29 ctermfg=158 guibg=#222045 guifg=#c0c5b9
+hi! DiffChange ctermbg=23 ctermfg=159 guibg=#32314a guifg=#b3c3cc
+hi! DiffDelete ctermbg=95 ctermfg=224 guibg=#44442b guifg=#ceb0b6
 hi! DiffText cterm=NONE ctermbg=30 ctermfg=195 gui=NONE guibg=#5b7881 guifg=#c6c8d1
 hi! Directory ctermfg=109 guifg=#89b8c2
 hi! Error ctermbg=234 ctermfg=203 guibg=#161821 guifg=#e27878
