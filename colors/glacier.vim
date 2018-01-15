@@ -6,7 +6,7 @@
 "  cool-headed perspective for your coding
 "
 "
-" File:       iceorca.vim
+" File:       glacier.vim
 " Maintainer: cocopon <cocopon@me.com>
 " Modified:   2017-11-30 20:32+0900
 " License:    MIT
@@ -23,7 +23,7 @@ if exists('syntax_on')
   syntax reset
 endif
 
-let g:colors_name = 'iceorca'
+let g:colors_name = 'glacier'
 
 
 hi! ColorColumn cterm=NONE ctermbg=235 guibg=#1e2132
