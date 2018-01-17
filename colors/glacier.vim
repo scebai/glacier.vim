@@ -37,7 +37,7 @@ hi! Delimiter ctermfg=252 guifg=#c6c8d1
 hi! DiffAdd     ctermbg=29 ctermfg=158 guibg=#0d081f guifg=#8491c3
 hi! DiffChange  ctermbg=23 ctermfg=159 guibg=#460e44 guifg=#8491c3
 hi! DiffDelete  ctermbg=95 ctermfg=224 guibg=#165e83 guifg=#8491c3
-hi! DiffText cterm=NONE ctermbg=30 ctermfg=195 gui=NONE guibg=#5b7881 guifg=#c6c8d1
+hi! DiffText cterm=NONE ctermbg=30 ctermfg=195 gui=NONE guibg=#1919aa guifg=#bee0ce
 hi! Directory ctermfg=109 guifg=#89b8c2
 hi! Error ctermbg=234 ctermfg=203 guibg=#161821 guifg=#e27878
 hi! ErrorMsg ctermbg=234 ctermfg=203 guibg=#161821 guifg=#e27878
