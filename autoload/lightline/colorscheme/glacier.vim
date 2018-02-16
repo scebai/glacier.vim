@@ -69,7 +69,7 @@ function! s:build_palette() abort
 endfunction
 
 
-let g:lightline#colorscheme#iceberg#palette = s:build_palette()
+let g:lightline#colorscheme#glacier#palette = s:build_palette()
 
 
 let &cpo = s:save_cpo
