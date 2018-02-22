@@ -673,7 +673,7 @@ endfunction
 
 
 call pgmnt#compile(s:create_context(), {
-      \   'output': '../colors/iceberg.vim',
+      \   'output': '../colors/glacier.vim',
       \   'template': './template.vim',
       \ })
 
@@ -750,10 +750,10 @@ endfunction
 
 
 call pgmnt#compile(s:create_xline_context(), {
-      \   'output': '../autoload/airline/themes/iceberg.vim',
+      \   'output': '../autoload/airline/themes/glacier.vim',
       \   'template': './template-airline.vim',
       \ })
 call pgmnt#compile(s:create_xline_context(), {
-      \   'output': '../autoload/lightline/colorscheme/iceberg.vim',
+      \   'output': '../autoload/lightline/colorscheme/glacier.vim',
       \   'template': './template-lightline.vim',
       \ })
