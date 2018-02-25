@@ -34,8 +34,8 @@ hi! Constant ctermfg=140 guifg=#a093c7
 hi! Cursor ctermbg=252 ctermfg=234 guibg=#c6c8d1 guifg=#161821
 hi! CursorLineNr ctermbg=237 ctermfg=253 guibg=#2a3158 guifg=#cdd1e6
 hi! Delimiter ctermfg=252 guifg=#c6c8d1
-hi! DiffAdd     ctermbg=29 ctermfg=158 guibg=#0b092a guifg=#4fcff9
-hi! DiffChange  ctermbg=23 ctermfg=159 guibg=#461e44 guifg=#c4d1e9
+hi! DiffAdd     ctermbg=29 ctermfg=158 guibg=#461e44 guifg=#4fcff9
+hi! DiffChange  ctermbg=23 ctermfg=159 guibg=#211e55 guifg=#c4d1e9
 hi! DiffDelete  ctermbg=95 ctermfg=224 guibg=#1e295e guifg=#b4a5c3
 hi! DiffText cterm=NONE ctermbg=30 ctermfg=195 gui=NONE guibg=#1919aa guifg=#bee0ce
 hi! Directory ctermfg=109 guifg=#89b8c2
