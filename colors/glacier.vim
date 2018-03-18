@@ -7,8 +7,8 @@
 "
 "
 " File:       glacier.vim
-" Maintainer: cocopon <cocopon@me.com>
-" Modified:   2018-03-12 10:53+0900
+" Maintainer: scebai@topaz.plala.or.jp
+" Modified:   2018-03-18 08:13+0900
 " License:    MIT
 
 
