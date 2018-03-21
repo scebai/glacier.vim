@@ -34,18 +34,10 @@ hi! Constant ctermfg=140 guifg=#a093c7
 hi! Cursor ctermbg=252 ctermfg=234 guibg=#c6c8d1 guifg=#161821
 hi! CursorLineNr ctermbg=237 ctermfg=253 guibg=#2a3158 guifg=#cdd1e6
 hi! Delimiter ctermfg=252 guifg=#c6c8d1
-
 hi! DiffAdd     ctermbg=29 ctermfg=158 guibg=#461e44 guifg=#4fcff9
 hi! DiffChange  ctermbg=23 ctermfg=159 guibg=#283665 guifg=#c4d1e9
-
-"hi! DiffDelete  ctermbg=95 ctermfg=224 guibg=#433d5e guifg=#b4a5c3
- hi! DiffDelete  ctermbg=95 ctermfg=224 guibg=#493047 guifg=#b4a5c3
-
-"hi! DiffText cterm=NONE ctermbg=30 ctermfg=195 gui=NONE guibg=#7b659b guifg=#bee0ce
-"hi! DiffText cterm=NONE ctermbg=30 ctermfg=195 gui=NONE guibg=#160c25 guifg=#f7f7f
-"hi! DiffText cterm=NONE ctermbg=30 ctermfg=195 gui=NONE guibg=#a1d6f2 guifg=#160c25
- hi! DiffText cterm=NONE ctermbg=30 ctermfg=195 gui=NONE guibg=#160c25 guifg=#f7f7fa
-
+hi! DiffDelete  ctermbg=95 ctermfg=224 guibg=#493047 guifg=#b4a5c3
+hi! DiffText cterm=NONE ctermbg=30 ctermfg=195 gui=NONE guibg=#160c25 guifg=#f7f7fa
 hi! Directory ctermfg=109 guifg=#89b8c2
 hi! Error ctermbg=234 ctermfg=203 guibg=#161821 guifg=#e27878
 hi! ErrorMsg ctermbg=234 ctermfg=203 guibg=#161821 guifg=#e27878
