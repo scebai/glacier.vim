@@ -9,7 +9,7 @@ Glacier is a dark blue color scheme for Vim. Forked from [cocopon/iceberg.vim](h
 
 
 
-![Screenshot](./glacier.png)
+![Screenshot](./screenshot-000.png)
 
 
 Features
