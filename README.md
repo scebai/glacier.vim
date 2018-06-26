@@ -24,12 +24,14 @@ Features
 - 256-colors terminal support
 - [airline][airline] theme and [lightline][lightline] colorscheme
 - Various plugins support:
-  [CtrlP][ctrlp]
+  [ALE][ale]
+  / [CtrlP][ctrlp]
   / [Denite][denite]
   / [EasyMotion][easymotion]
   / [Git Gutter][git-gutter]
   / [Signify][signify]
   / [Sneak][sneak]
+  / [Startify][startify]
   / [Syntastic][syntastic]
   / [vim-plug][vim-plug]
   / [vim-zenspace][vim-zenspace]
@@ -52,6 +54,28 @@ Creator of Iceberg talked about how to create your lovely color scheme in [VimCo
 
 [![Creating Your Lovely Color Scheme](http://cocopon.github.io/iceberg.vim/assets/github/creating-your-lovely-color-scheme.png)][vimconf-presentation]
 
+
+
+
+Building your own Iceberg
+-------------------------
+1. Install [cocopon/pgmnt.vim][pgmnt], a template engine for Vim color scheme, to your Vim.
+
+2. To modify a color palette, edit `autoload/iceberg/palette/dark.vim`. If you 
+   make changes, be sure to `:source` this file before step 4 otherwise your color
+   palette changes will not be reflected.
+
+3. To modify highlighting groups or links, edit `src/iceberg.vim`.
+
+4. After editing, compile the source file as below:
+
+    ```vim
+    :e src/iceberg.vim
+    :cd %:h
+    :source %
+    ```
+
+    Compiled files will be output into `autoload` directory.
 
 
 
@@ -78,6 +102,7 @@ MIT License. See `LICENSE.txt` for more information.
 
 
 
+[ale]:https://github.com/w0rp/ale
 [airline]:https://github.com/vim-airline/vim-airline/
 [ctrlp]:https://github.com/ctrlpvim/ctrlp.vim
 [denite]:https://github.com/Shougo/denite.nvim
@@ -85,8 +110,10 @@ MIT License. See `LICENSE.txt` for more information.
 [git-gutter]:https://github.com/airblade/vim-gitgutter
 [lightline]:https://github.com/itchyny/lightline.vim
 [neovim]:https://neovim.io/
+[pgmnt]:https://github.com/cocopon/pgmnt.vim
 [signify]:https://github.com/mhinz/vim-signify/
 [sneak]:https://github.com/justinmk/vim-sneak
+[startify]:https://github.com/mhinz/vim-startify
 [syntastic]:http://github.com/vim-syntastic/syntastic
 [terminal-sexy]:http://terminal.sexy
 [typescript-vim]:https://github.com/leafgarland/typescript-vim
