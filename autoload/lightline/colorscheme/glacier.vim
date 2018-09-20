@@ -12,8 +12,16 @@ function! s:build_palette() abort
         \ 'tabline':  {}}
 
   let col_base     = ['#55c9ea', '#461e44', 243, 237]
-  let col_edge     = ['#c2e6ff', '#818596', 234, 245]
+  let col_edge     = ['#c2e7ff', '#818596', 234, 245]
+
   let col_gradient = ['#c2e6ff', '#3e445e', 234, 241]
+  let col_gard   = ['#e5ede8', '#7e849e', 234, 241]
+  let col_gard2   = ['#e5ede8', '#0087AF', 234, 241]
+  let col_gard3   = ['#e5ede8', '#102088', 234, 241]
+  let col_gard14   = ['#e5ede8', '#0033af', 234, 241]
+
+  let col_garden   = ['#e5ede8', '#0188af', 234, 241]
+
   let col_nc       = ['#84a0c6', '#102039', 238, 233]
   let col_tabfill  = ['#e5edf8', '#34394e', 243, 237]
   let col_normal   = ['#a2d7dd', '#003c40', 234, 245]
@@ -39,7 +47,7 @@ function! s:build_palette() abort
 
   let p.insert.left = [
         \ col_insert,
-        \ col_gradient]
+        \ col_garden]
   let p.replace.left = [
         \ col_replace,
         \ col_gradient]
