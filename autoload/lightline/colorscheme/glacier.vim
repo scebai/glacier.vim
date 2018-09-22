@@ -24,7 +24,7 @@ function! s:build_palette() abort
   let col_visual   = ['#161821', '#b4be82', 234, 150]
   let col_tabsel   = ['#17171b', '#818596', 234, 245]
 
-  let col_buff_left     = ['#ffffff', '#6c9bd2', 243, 237]
+  let col_buff_left     = ['#02064d', '#6c9bd2', 243, 237]
   let col_buff_middle   = ['#ffffff', '#00558f', 243, 237]
   let col_buff_right    = ['#00080a', '#7ec7d8', 243, 237]
 
