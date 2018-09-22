@@ -14,7 +14,6 @@ function! s:build_palette() abort
   let col_base     = ['#55c9ea', '#461e44', 243, 237]
   let col_edge     = ['#c2e7ff', '#818596', 234, 245]
   let col_gradient = ['#c2e6ff', '#3e445e', 234, 241]
-  let col_gard7    = ['#ffffff', '#5b7e91', 243, 237]
   let col_nc       = ['#84a0c6', '#102039', 238, 233]
   let col_tabfill  = ['#e5edf8', '#34394e', 243, 237]
   let col_normal   = ['#a2d7dd', '#003c40', 234, 245]
@@ -24,6 +23,10 @@ function! s:build_palette() abort
   let col_replace  = ['#161821', '#e2a478', 234, 216]
   let col_visual   = ['#161821', '#b4be82', 234, 150]
   let col_tabsel   = ['#17171b', '#818596', 234, 245]
+
+  let col_buff_left     = ['#ffffff', '#6c9bd2', 243, 237]
+  let col_buff_middle   = ['#ffffff', '#00558f', 243, 237]
+  let col_buff_right    = ['#00080a', '#7ec7d8', 243, 237]
 
   let p.normal.middle = [
         \ col_base]
@@ -40,9 +43,14 @@ function! s:build_palette() abort
 
   let p.insert.left = [
         \ col_insert,
-        \ col_base]
+        \ col_buff_left]
   let p.insert.middle = [
-        \ col_gard7]
+        \ col_buff_middle]
+
+  let p.insert.right = [
+        \ col_edge,
+        \ col_buff_right]
+
 
   let p.replace.left = [
         \ col_replace,
