@@ -1,0 +1,40 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+build_palette	autoload/airline/themes/glacier.vim	/^function! s:build_palette() abort$/;"	f
+build_palette	autoload/lightline/colorscheme/glacier.vim	/^function! s:build_palette() abort$/;"	f
+build_palette	src/template-airline.vim	/^function! s:build_palette() abort$/;"	f
+build_palette	src/template-lightline.vim	/^function! s:build_palette() abort$/;"	f
+create_context	src/glacier.vim	/^function! s:create_context() abort$/;"	f
+create_xline_context	src/glacier.vim	/^function! s:create_xline_context() abort$/;"	f
+g:airline#themes#iceberg#palette	autoload/airline/themes/glacier.vim	/^let g:airline#themes#iceberg#palette = s:build_palette()$/;"	v
+g:airline#themes#iceberg#palette	src/template-airline.vim	/^let g:airline#themes#iceberg#palette = s:build_palette()$/;"	v
+g:colors_name	colors/glacier.vim	/^let g:colors_name = 'glacier'$/;"	v
+g:colors_name	src/template.vim	/^let g:colors_name = 'glacier'$/;"	v
+g:lightline#colorscheme#glacier#palette	autoload/lightline/colorscheme/glacier.vim	/^let g:lightline#colorscheme#glacier#palette = s:build_palette()$/;"	v
+g:lightline#colorscheme#glacier#palette	src/template-lightline.vim	/^let g:lightline#colorscheme#glacier#palette = s:build_palette()$/;"	v
+g:terminal_ansi_colors	colors/glacier.vim	/^  let g:terminal_ansi_colors = ['#1e2132', '#e27878', '#b4be82', '#e2a478', '#84a0c6', '#a093c7', '#89b8c2', '#c6c8d1', '#6b7089', '#e98989', '#c0ca8e', '#e9b189', '#91acd1', '#ada0d3', '#95c4ce', '#d2d4de']$/;"	v
+g:terminal_color_0	colors/glacier.vim	/^  let g:terminal_color_0 = '#1e2132'$/;"	v
+g:terminal_color_1	colors/glacier.vim	/^  let g:terminal_color_1 = '#e27878'$/;"	v
+g:terminal_color_10	colors/glacier.vim	/^  let g:terminal_color_10 = '#c0ca8e'$/;"	v
+g:terminal_color_11	colors/glacier.vim	/^  let g:terminal_color_11 = '#e9b189'$/;"	v
+g:terminal_color_12	colors/glacier.vim	/^  let g:terminal_color_12 = '#91acd1'$/;"	v
+g:terminal_color_13	colors/glacier.vim	/^  let g:terminal_color_13 = '#ada0d3'$/;"	v
+g:terminal_color_14	colors/glacier.vim	/^  let g:terminal_color_14 = '#95c4ce'$/;"	v
+g:terminal_color_15	colors/glacier.vim	/^  let g:terminal_color_15 = '#d2d4de'$/;"	v
+g:terminal_color_2	colors/glacier.vim	/^  let g:terminal_color_2 = '#b4be82'$/;"	v
+g:terminal_color_3	colors/glacier.vim	/^  let g:terminal_color_3 = '#e2a478'$/;"	v
+g:terminal_color_4	colors/glacier.vim	/^  let g:terminal_color_4 = '#84a0c6'$/;"	v
+g:terminal_color_5	colors/glacier.vim	/^  let g:terminal_color_5 = '#a093c7'$/;"	v
+g:terminal_color_6	colors/glacier.vim	/^  let g:terminal_color_6 = '#89b8c2'$/;"	v
+g:terminal_color_7	colors/glacier.vim	/^  let g:terminal_color_7 = '#c6c8d1'$/;"	v
+g:terminal_color_8	colors/glacier.vim	/^  let g:terminal_color_8 = '#6b7089'$/;"	v
+g:terminal_color_9	colors/glacier.vim	/^  let g:terminal_color_9 = '#e98989'$/;"	v
+iceberg#palette#dark#create	autoload/glacier/palette/dark.vim	/^function! iceberg#palette#dark#create() abort$/;"	f
+s:save_cpo	autoload/airline/themes/glacier.vim	/^let s:save_cpo = &cpo$/;"	v
+s:save_cpo	autoload/lightline/colorscheme/glacier.vim	/^let s:save_cpo = &cpo$/;"	v
+s:save_cpo	src/template-airline.vim	/^let s:save_cpo = &cpo$/;"	v
+s:save_cpo	src/template-lightline.vim	/^let s:save_cpo = &cpo$/;"	v

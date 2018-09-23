@@ -12,7 +12,7 @@ function! s:build_palette() abort
         \ 'tabline':  {}}
 
   let col_base     = ['#55c9ea', '#461e44', 243, 237]
-  let col_edge     = ['#c2e6ff', '#818596', 234, 245]
+  let col_edge     = ['#c2e7ff', '#818596', 234, 245]
   let col_gradient = ['#c2e6ff', '#3e445e', 234, 241]
   let col_nc       = ['#84a0c6', '#102039', 238, 233]
   let col_tabfill  = ['#e5edf8', '#34394e', 243, 237]
@@ -23,6 +23,13 @@ function! s:build_palette() abort
   let col_replace  = ['#161821', '#e2a478', 234, 216]
   let col_visual   = ['#161821', '#b4be82', 234, 150]
   let col_tabsel   = ['#17171b', '#818596', 234, 245]
+
+  let col_buff_left     = ['#ffffff', '#0086a2', 243, 237]
+"  let col_buff_middle   = ['#ffffff', '#2a4073', 243, 237]
+  let col_buff_middle   = ['#ffffff', '#324356', 243, 237]
+"  let col_buff_right    = ['#00080a', '#c9c5e6', 243, 237]
+  let col_buff_right    = ['#00080a', '#83ccd2', 243, 237]
+"  let col_buff_right    = ['#00089a', '#c5e4ed', 243, 237]
 
   let p.normal.middle = [
         \ col_base]
@@ -39,7 +46,15 @@ function! s:build_palette() abort
 
   let p.insert.left = [
         \ col_insert,
-        \ col_gradient]
+        \ col_buff_left]
+  let p.insert.middle = [
+        \ col_buff_middle]
+
+  let p.insert.right = [
+        \ col_edge,
+        \ col_buff_right]
+
+
   let p.replace.left = [
         \ col_replace,
         \ col_gradient]
