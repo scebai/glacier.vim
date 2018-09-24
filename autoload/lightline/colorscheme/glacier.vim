@@ -25,11 +25,8 @@ function! s:build_palette() abort
   let col_tabsel   = ['#17171b', '#818596', 234, 245]
 
   let col_buff_left     = ['#ffffff', '#0086a2', 243, 237]
-"  let col_buff_middle   = ['#ffffff', '#2a4073', 243, 237]
   let col_buff_middle   = ['#ffffff', '#324356', 243, 237]
-"  let col_buff_right    = ['#00080a', '#c9c5e6', 243, 237]
-  let col_buff_right    = ['#00080a', '#83ccd2', 243, 237]
-"  let col_buff_right    = ['#00089a', '#c5e4ed', 243, 237]
+  let col_buff_right    = ['#0020e9', '#83ccd2', 243, 237]
 
   let p.normal.middle = [
         \ col_base]
