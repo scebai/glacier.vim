@@ -32,4 +32,6 @@ let g:colors_name = 'glacier'
 
 if has('nvim')
   {{ neovim_term_defs }}
+else
+  {{ vim_term_defs }}
 endif

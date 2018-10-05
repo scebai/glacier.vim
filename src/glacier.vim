@@ -49,24 +49,24 @@ function! s:create_context() abort
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'DiffAdd', {
-        \   'ctermbg': c.diffadd_bg,
-        \   'ctermfg': c.diffadd_fg,
-        \   'guibg': g.diffadd_bg,
-        \   'guifg': g.diffadd_fg,
+        \   'ctermbg': c.green_tint_bg,
+        \   'ctermfg': c.green_tint_fg,
+        \   'guibg': g.green_tint_bg,
+        \   'guifg': g.green_tint_fg,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'DiffChange', {
-        \   'ctermbg': c.diffchange_bg,
-        \   'ctermfg': c.diffchange_fg,
-        \   'guibg': g.diffchange_bg,
-        \   'guifg': g.diffchange_fg,
+        \   'ctermbg': c.lblue_tint_bg,
+        \   'ctermfg': c.lblue_tint_fg,
+        \   'guibg': g.lblue_tint_bg,
+        \   'guifg': g.lblue_tint_fg,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'DiffDelete', {
-        \   'ctermbg': c.diffdelete_bg,
-        \   'ctermfg': c.diffdelete_fg,
-        \   'guibg': g.diffdelete_bg,
-        \   'guifg': g.diffdelete_fg,
+        \   'ctermbg': c.red_tint_bg,
+        \   'ctermfg': c.red_tint_fg,
+        \   'guibg': g.red_tint_bg,
+        \   'guifg': g.red_tint_fg,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'DiffText', {
@@ -112,8 +112,8 @@ function! s:create_context() abort
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'Function', {
-        \   'ctermfg': c.orange,
-        \   'guifg': g.orange,
+        \   'ctermfg': c.blue,
+        \   'guifg': g.blue,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'Identifier', {
@@ -219,18 +219,30 @@ function! s:create_context() abort
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'SpellBad', {
+        \   'ctermbg': c.red_tint_bg,
+        \   'ctermfg': c.normal_fg,
+        \   'gui': 'undercurl',
         \   'guisp': g.red,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'SpellCap', {
+        \   'ctermbg': c.blue_tint_bg,
+        \   'ctermfg': c.normal_fg,
+        \   'gui': 'undercurl',
         \   'guisp': g.blue,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'SpellLocal', {
+        \   'ctermbg': c.lblue_tint_bg,
+        \   'ctermfg': c.normal_fg,
+        \   'gui': 'undercurl',
         \   'guisp': g.lblue,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'SpellRare', {
+        \   'ctermbg': c.purple_tint_bg,
+        \   'ctermfg': c.normal_fg,
+        \   'gui': 'undercurl',
         \   'guisp': g.purple,
         \ }))
   call extend(rules, pgmnt#hi#group(
@@ -270,8 +282,8 @@ function! s:create_context() abort
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'Structure', {
-        \   'ctermfg': c.lblue,
-        \   'guifg': g.lblue,
+        \   'ctermfg': c.blue,
+        \   'guifg': g.blue,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'TabLine', {
@@ -308,16 +320,16 @@ function! s:create_context() abort
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'Todo', {
-        \   'ctermbg': c.normal_bg,
-        \   'ctermfg': c.green,
-        \   'guibg': g.normal_bg,
+        \   'ctermbg': c.todo_bg,
+        \   'ctermfg': c.todo_fg,
+        \   'guibg': g.todo_bg,
         \   'guifg': g.todo_fg,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'Type', {
-        \   'ctermfg': c.lblue,
+        \   'ctermfg': c.blue,
         \   'gui': 'NONE',
-        \   'guifg': g.lblue,
+        \   'guifg': g.blue,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'Underlined', {
@@ -355,7 +367,7 @@ function! s:create_context() abort
   call add(links, pgmnt#hi#link('cssBraces', 'Delimiter'))
   call add(links, pgmnt#hi#link('cssClassName', 'Special'))
   call add(links, pgmnt#hi#link('cssClassNameDot', 'Normal'))
-  call add(links, pgmnt#hi#link('cssPseudoClassId', 'Function'))
+  call add(links, pgmnt#hi#link('cssPseudoClassId', 'Special'))
   call add(links, pgmnt#hi#link('cssTagName', 'Statement'))
 
   " diff
@@ -384,8 +396,12 @@ function! s:create_context() abort
   " php
   call add(links, pgmnt#hi#link('phpVarSelector', 'Identifier'))
 
+  " python
+  call add(links, pgmnt#hi#link('pythonFunction', 'Title'))
+
   " ruby
   call add(links, pgmnt#hi#link('rubyDefine', 'Statement'))
+  call add(links, pgmnt#hi#link('rubyFunction', 'Title'))
   call add(links, pgmnt#hi#link('rubyInterpolationDelimiter', 'String'))
   call add(links, pgmnt#hi#link('rubySharpBang', 'Comment'))
   call add(links, pgmnt#hi#link('rubyStringDelimiter', 'String'))
@@ -398,7 +414,15 @@ function! s:create_context() abort
 
   " vim
   call add(links, pgmnt#hi#link('vimContinue', 'Comment'))
-  call add(links, pgmnt#hi#link('vimIsCommand', 'Statement'))
+  call add(links, pgmnt#hi#link('vimFuncSID', 'vimFunction'))
+  call add(links, pgmnt#hi#link('vimFuncVar', 'Normal'))
+  call add(links, pgmnt#hi#link('vimFunction', 'Title'))
+  call add(links, pgmnt#hi#link('vimGroup', 'Statement'))
+  call add(links, pgmnt#hi#link('vimHiGroup', 'Statement'))
+  call add(links, pgmnt#hi#link('vimHiTerm', 'Identifier'))
+  call add(links, pgmnt#hi#link('vimMapModKey', 'Special'))
+  call add(links, pgmnt#hi#link('vimOption', 'Identifier'))
+  call add(links, pgmnt#hi#link('vimVar', 'Normal'))
 
   " xml
   call add(links, pgmnt#hi#link('xmlAttrib', 'Constant'))
@@ -413,6 +437,22 @@ function! s:create_context() abort
   " }}}
 
   " Rules for plugins {{{
+  " [ALE](https://github.com/w0rp/ale)
+  call extend(rules, pgmnt#hi#group(
+        \ 'ALEErrorSign', {
+        \   'ctermbg': c.linenr_bg,
+        \   'ctermfg': c.red,
+        \   'guibg': g.linenr_bg,
+        \   'guifg': g.red,
+        \ }))
+  call extend(rules, pgmnt#hi#group(
+        \ 'ALEWarningSign', {
+        \   'ctermbg': c.linenr_bg,
+        \   'ctermfg': c.orange,
+        \   'guibg': g.linenr_bg,
+        \   'guifg': g.orange,
+        \ }))
+
   " [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
   call add(links, pgmnt#hi#link('CtrlPPrtCursor', 'Cursor'))
   call add(links, pgmnt#hi#link('CtrlPMatch', 'Title'))
@@ -427,7 +467,7 @@ function! s:create_context() abort
 
   " [Denite](https://github.com/Shougo/denite.nvim)
   call add(links, pgmnt#hi#link('deniteMatched', 'Normal'))
-  call add(links, pgmnt#hi#link('deniteMatchedChar', 'Function'))
+  call add(links, pgmnt#hi#link('deniteMatchedChar', 'Title'))
 
   " [EasyMotion](https://github.com/easymotion/vim-easymotion)
   call extend(rules, pgmnt#hi#group(
@@ -447,14 +487,13 @@ function! s:create_context() abort
         \ }))
 
   " [vim-flow](https://github.com/flowtype/vim-flow)
-  call add(links, pgmnt#hi#link('jsFlowType', 'Statement'))
   call add(links, pgmnt#hi#link('jsFlowMaybe', 'Normal'))
   call add(links, pgmnt#hi#link('jsFlowObject', 'Normal'))
+  call add(links, pgmnt#hi#link('jsFlowType', 'PreProc'))
 
   " [vim-graphql](https://github.com/jparise/vim-graphql)
-  call add(links, pgmnt#hi#link('graphqlIdentifier', 'Normal'))
+  call add(links, pgmnt#hi#link('graphqlName', 'Normal'))
   call add(links, pgmnt#hi#link('graphqlOperator', 'Normal'))
-  call add(links, pgmnt#hi#link('graphqlStructure', 'Statement'))
 
   " [Git Gutter](https://github.com/airblade/vim-gitgutter)
   call extend(rules, pgmnt#hi#group(
@@ -481,15 +520,20 @@ function! s:create_context() abort
 
   " [vim-javascript](https://github.com/pangloss/vim-javascript)
   call add(links, pgmnt#hi#link('jsArrowFunction', 'Operator'))
-  call add(links, pgmnt#hi#link('jsClassMethodType', 'Statement'))
+  call add(links, pgmnt#hi#link('jsClassDefinition', 'Normal'))
+  call add(links, pgmnt#hi#link('jsClassFuncName', 'Title'))
   call add(links, pgmnt#hi#link('jsExport', 'Statement'))
-  call add(links, pgmnt#hi#link('jsFuncName', 'Normal'))
-  call add(links, pgmnt#hi#link('jsFunction', 'Function'))
+  call add(links, pgmnt#hi#link('jsFuncName', 'Title'))
+  call add(links, pgmnt#hi#link('jsFuncCall', 'Normal'))
   call add(links, pgmnt#hi#link('jsGlobalObjects', 'Statement'))
   call add(links, pgmnt#hi#link('jsModuleKeywords', 'Statement'))
   call add(links, pgmnt#hi#link('jsModuleOperators', 'Statement'))
+  call add(links, pgmnt#hi#link('jsNull', 'Constant'))
+  call add(links, pgmnt#hi#link('jsObjectFuncName', 'Title'))
   call add(links, pgmnt#hi#link('jsObjectKey', 'Identifier'))
   call add(links, pgmnt#hi#link('jsSuper', 'Statement'))
+  call add(links, pgmnt#hi#link('jsTemplateBraces', 'Special'))
+  call add(links, pgmnt#hi#link('jsUndefined', 'Constant'))
 
   " [vim-markdown](https://github.com/tpope/vim-markdown)
   call add(links, pgmnt#hi#link('markdownBold', 'Special'))
@@ -498,9 +542,12 @@ function! s:create_context() abort
   call add(links, pgmnt#hi#link('markdownHeadingDelimiter', 'Comment'))
   call add(links, pgmnt#hi#link('markdownRule', 'Comment'))
 
+  " [nginx.vim](https://github.com/chr4/nginx.vim)
+  call add(links, pgmnt#hi#link('ngxDirective', 'Statement'))
+
   " [vim-plug](https://github.com/junegunn/vim-plug)
   call add(links, pgmnt#hi#link('plug1', 'Normal'))
-  call add(links, pgmnt#hi#link('plug2', 'Structure'))
+  call add(links, pgmnt#hi#link('plug2', 'Identifier'))
   call add(links, pgmnt#hi#link('plugDash', 'Comment'))
   call add(links, pgmnt#hi#link('plugMessage', 'Special'))
 
@@ -526,6 +573,17 @@ function! s:create_context() abort
         \   'guibg': g.visual_bg,
         \   'guifg': g.comment_fg,
         \ }))
+
+  " [Startify](https://github.com/mhinz/vim-startify)
+  call add(links, pgmnt#hi#link('StartifyBracket', 'Comment'))
+  call add(links, pgmnt#hi#link('StartifyFile', 'Identifier'))
+  call add(links, pgmnt#hi#link('StartifyFooter', 'Constant'))
+  call add(links, pgmnt#hi#link('StartifyHeader', 'Constant'))
+  call add(links, pgmnt#hi#link('StartifyNumber', 'Special'))
+  call add(links, pgmnt#hi#link('StartifyPath', 'Comment'))
+  call add(links, pgmnt#hi#link('StartifySection', 'Statement'))
+  call add(links, pgmnt#hi#link('StartifySlash', 'Comment'))
+  call add(links, pgmnt#hi#link('StartifySpecial', 'Normal'))
 
   " [SVSS](https://github.com/cocopon/svss.vim)
   call add(links, pgmnt#hi#link('svssBraces', 'Delimiter'))
@@ -553,6 +611,7 @@ function! s:create_context() abort
   call add(links, pgmnt#hi#link('typescriptAjaxMethods', 'Normal'))
   call add(links, pgmnt#hi#link('typescriptBraces', 'Normal'))
   call add(links, pgmnt#hi#link('typescriptEndColons', 'Normal'))
+  call add(links, pgmnt#hi#link('typescriptFuncKeyword', 'Statement'))
   call add(links, pgmnt#hi#link('typescriptGlobalObjects', 'Statement'))
   call add(links, pgmnt#hi#link('typescriptHtmlElemProperties', 'Normal'))
   call add(links, pgmnt#hi#link('typescriptIdentifier', 'Statement'))
@@ -594,15 +653,24 @@ function! s:create_context() abort
         \   pgmnt#color#adjust_color(g.lblue,     {'saturation': +0.05, 'lightness': +0.05}),
         \   pgmnt#color#adjust_color(g.normal_fg, {'saturation': +0.05, 'lightness': +0.05}),
         \ ]
+  let quoted_term_colors = map(
+        \ copy(term_colors),
+        \ '"''" . v:val . "''"')
+
   let neovim_term_defs = map(
-        \ term_colors,
-        \ '"let g:terminal_color_" . v:key . " = ''" . v:val . "''"')
+        \ copy(quoted_term_colors),
+        \ '"let g:terminal_color_" . v:key . " = " . v:val')
+  let vim_term_defs = printf(
+        \ 'let g:terminal_ansi_colors = [%s]',
+        \ join(quoted_term_colors, ', '),
+        \ )
   
   return {
         \   'links': links,
         \   'modified': strftime('%Y-%m-%d %H:%M%z'),
         \   'neovim_term_defs': neovim_term_defs,
         \   'rules': rules,
+        \   'vim_term_defs': vim_term_defs,
         \ }
 endfunction
 
