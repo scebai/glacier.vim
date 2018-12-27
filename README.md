@@ -13,11 +13,12 @@ Glacier is a dark blue color scheme for Vim. Forked from [cocopon/iceberg.vim](h
 ![Screenshot](./screenshot-000.png)
 
 
-Features
---------
- 256-colors terminal support
- [airline][airline] theme and [lightline][lightline] colorscheme
- Various plugins support:
+# Features
+- Simple: no configuration required and easy to use
+- Fast: pre-compiled to reduce loading time
+- 256-colors terminal support
+- [airline][airline] theme and [lightline][lightline] colorscheme
+- Various plugins support:
   [ALE][ale]
   / [CtrlP][ctrlp]
   / [Denite][denite]
@@ -43,17 +44,31 @@ Features
 # Philosophy
 Creator of Iceberg talked about how to create your lovely color scheme in
 [VimConf 2017][vimconf2017], international Vim conference.
-[This presentation][vimconf-presentation] also explained the philosophy of
-Iceberg.
+[This slides][vimconf-slides] also explained the philosophy of Iceberg.
 
-Philosophy
-----------
-Creator of Iceberg talked about how to create your lovely color scheme in [VimConf 2017][vimconf2017], international Vim conference. [This presentation][vimconf-presentation] also explained the philosophy of Iceberg.
+
+
+
+# For other environments
+- [Terminal.app profile](https://cocopon.github.io/iceberg.vim/#macosTerminalApp) by [cocopon](https://github.com/cocopon)
+- [iTerm2](https://github.com/aseom/dotfiles/blob/master/osx/iterm2/iceberg.itermcolors) by [aseom](https://github.com/aseom)
+- [Atom](https://github.com/cocopon/atom-iceberg-syntax/) by [cocopon](https://github.com/cocopon)
+- [Xcode](https://github.com/cocopon/xcode-iceberg) by [cocopon](https://github.com/cocopon)
+- [AppCode](https://github.com/Kuniwak/iceberg.icls) by [Kuniwak](https://github.com/Kuniwak)
+- [Fish](https://github.com/pkazmier/dotfiles/blob/master/.config/fish/functions/bobthefish_colors.fish) by [pkazmier](https://github.com/pkazmier)
+- [bumblebee-status](https://github.com/tobi-wan-kenobi/bumblebee-status) by [Aaron](https://github.com/whzup)
+
+NOTE: [terminal.sexy][terminal-sexy] provides configuration files for
+the 16 ANSI colors for many terminal emulators. Use [.Xresources file][xresources]
+as import and export it for the emulator of your choice.
 
 [![Creating Your Lovely Color Scheme](http://cocopon.github.io/iceberg.vim/assets/github/creating-your-lovely-color-scheme.png)][vimconf-presentation]
 
 
 # Building your own Iceberg
+NOTE: This section is for color scheme developers. If you just want to use the
+color scheme, you don't have to follow these steps.
+
 1. Install [cocopon/pgmnt.vim][pgmnt], a template engine for Vim color scheme,
    to your Vim.
 
@@ -74,6 +89,7 @@ Creator of Iceberg talked about how to create your lovely color scheme in [VimCo
    Compiled files will be output into `autoload` directory.
 
 
+<<<<<<< HEAD
 # For other environments
 - [Terminal.app profile](https://cocopon.github.io/iceberg.vim/#macosTerminalApp) by [cocopon](https://github.com/cocopon)
 - [iTerm2](https://github.com/aseom/dotfiles/blob/master/osx/iterm2/iceberg.itermcolors) by [aseom](https://github.com/aseom)
@@ -82,10 +98,9 @@ Creator of Iceberg talked about how to create your lovely color scheme in [VimCo
 - [AppCode](https://github.com/Kuniwak/iceberg.icls) by [Kuniwak](https://github.com/Kuniwak)
 - [Fish](https://github.com/pkazmier/dotfiles/blob/master/.config/fish/functions/bobthefish_colors.fish) by [pkazmier](https://github.com/pkazmier)
 
-- [airline][airline] colorscheme is not support.
 
-License
--------
+
+# License
 MIT License. See `LICENSE.txt` for more information.
 
 [ale]:https://github.com/w0rp/ale
@@ -105,6 +120,6 @@ MIT License. See `LICENSE.txt` for more information.
 [vim-markdown]:https://github.com/tpope/vim-markdown
 [vim-plug]:https://github.com/junegunn/vim-plug
 [vim-zenspace]:https://github.com/thinca/vim-zenspace
-[vimconf-presentation]:https://speakerdeck.com/cocopon/creating-your-lovely-color-scheme
+[vimconf-slides]:https://speakerdeck.com/cocopon/creating-your-lovely-color-scheme
 [vimconf2017]:https://vimconf.vim-jp.org/2017/
 [xresources]:https://gist.github.com/cocopon/1d481941907d12db7a0df2f8806cfd41
