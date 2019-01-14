@@ -89,7 +89,6 @@ color scheme, you don't have to follow these steps.
    Compiled files will be output into `autoload` directory.
 
 
-<<<<<<< HEAD
 # For other environments
 - [Terminal.app profile](https://cocopon.github.io/iceberg.vim/#macosTerminalApp) by [cocopon](https://github.com/cocopon)
 - [iTerm2](https://github.com/aseom/dotfiles/blob/master/osx/iterm2/iceberg.itermcolors) by [aseom](https://github.com/aseom)
@@ -97,7 +96,6 @@ color scheme, you don't have to follow these steps.
 - [Xcode](https://github.com/cocopon/xcode-iceberg) by [cocopon](https://github.com/cocopon)
 - [AppCode](https://github.com/Kuniwak/iceberg.icls) by [Kuniwak](https://github.com/Kuniwak)
 - [Fish](https://github.com/pkazmier/dotfiles/blob/master/.config/fish/functions/bobthefish_colors.fish) by [pkazmier](https://github.com/pkazmier)
-
 
 
 # License
