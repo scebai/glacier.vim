@@ -9,7 +9,7 @@
 " File:       glacier.vim
 " Maintainer: scebai@topaz.plala.or.jp
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2018-10-18 01:01+0900
+" Modified:   2019-01-04 19:45+0900
 " License:    MIT
 
 
@@ -95,6 +95,8 @@ hi! diffAdded ctermfg=150 guifg=#b4be82
 hi! diffRemoved ctermfg=203 guifg=#e27878
 hi! ALEErrorSign ctermbg=235 ctermfg=203 guibg=#1e2132 guifg=#e27878
 hi! ALEWarningSign ctermbg=235 ctermfg=216 guibg=#1e2132 guifg=#e2a478
+hi! ALEVirtualTextError ctermfg=203 guifg=#e27878
+hi! ALEVirtualTextWarning ctermfg=216 guifg=#e2a478
 hi! CtrlPMode1 ctermbg=241 ctermfg=234 guibg=#5a5f72 guifg=#17171b
 hi! EasyMotionShade ctermfg=239 guifg=#3d425b
 hi! EasyMotionTarget ctermfg=150 guifg=#b4be82
@@ -164,6 +166,7 @@ hi! link jsClassDefinition Normal
 hi! link jsClassFuncName Title
 hi! link jsExport Statement
 hi! link jsFuncName Title
+hi! link jsFutureKeys Statement
 hi! link jsFuncCall Normal
 hi! link jsGlobalObjects Statement
 hi! link jsModuleKeywords Statement
