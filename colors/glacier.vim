@@ -8,7 +8,8 @@
 "
 " File:       glacier.vim
 " Maintainer: scebai@topaz.plala.or.jp
-" Modified:   2018-06-24 10:37+0900
+" Maintainer: cocopon <cocopon@me.com>
+" Modified:   2019-01-04 19:45+0900
 " License:    MIT
 
 
@@ -53,7 +54,7 @@ hi! FoldColumn ctermbg=235 ctermfg=239 guibg=#1e2132 guifg=#444b71
 hi! Function ctermfg=110 guifg=#84a0c6
 hi! Identifier cterm=NONE ctermfg=109 guifg=#89b8c2
 hi! Include ctermfg=110 guifg=#84a0c6
-hi! LineNr ctermbg=235 ctermfg=239 guibg=#1e2132 guifg=#444b71
+hi! LineNr ctermbg=235 ctermfg=239 guibg=#1e2132 guifg=#656088
 hi! MatchParen ctermbg=237 ctermfg=255 guibg=#3e445e guifg=#ffffff
 hi! MoreMsg ctermfg=150 guifg=#b4be82
 hi! Normal ctermbg=234 ctermfg=252 guibg=#161821 guifg=#c6c8d1
@@ -94,6 +95,8 @@ hi! diffAdded ctermfg=150 guifg=#b4be82
 hi! diffRemoved ctermfg=203 guifg=#e27878
 hi! ALEErrorSign ctermbg=235 ctermfg=203 guibg=#1e2132 guifg=#e27878
 hi! ALEWarningSign ctermbg=235 ctermfg=216 guibg=#1e2132 guifg=#e2a478
+hi! ALEVirtualTextError ctermfg=203 guifg=#e27878
+hi! ALEVirtualTextWarning ctermfg=216 guifg=#e2a478
 hi! CtrlPMode1 ctermbg=241 ctermfg=234 guibg=#5a5f72 guifg=#17171b
 hi! EasyMotionShade ctermfg=239 guifg=#3d425b
 hi! EasyMotionTarget ctermfg=150 guifg=#b4be82
@@ -163,6 +166,7 @@ hi! link jsClassDefinition Normal
 hi! link jsClassFuncName Title
 hi! link jsExport Statement
 hi! link jsFuncName Title
+hi! link jsFutureKeys Statement
 hi! link jsFuncCall Normal
 hi! link jsGlobalObjects Statement
 hi! link jsModuleKeywords Statement
